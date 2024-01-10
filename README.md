@@ -7,3 +7,11 @@
 
 ###4.2 Events
 - preventDefault() : 브라우저의 기본 동작을 실행하지 못하게 막아줌
+
+###4.4 Getting Username
+- 유저가 이름을 제출하면, form 자체가 없어지기
+- 유저에게 인사하는 문구 출력하기
+- class name 'hidden' 사용 = display:none;
+- classList.add, .remove를 이용하여 html요소 사라지고, 보이게 하기
+- ``(백틱), ${} : 변수를 문자열 안에 포함시키는 방법 
+- 문제 : 유저를 기억하지 못함. 새로고침할 때마다 새로 로그인 해줘야 한다. 새로고침해도 form 볼 필요없이 이름이 저장되어 있으면 좋겠어.
