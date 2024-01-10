@@ -1,3 +1,7 @@
+# Vanilla JS Practice
+
+바닐라 자바스크립트로 크롬앱 만들기(feat. nomadcoders)
+
 ###4.1 Form Submission
 - input의 유효성 검사를 작동시키기 위해서는 form 안에 input이 들어가야 함.
 - 입력을 하고 버튼(또는 엔터)을 누르면, 새로고침 됨.(웹사이트 재시작 > form이 submit되고 있어서)
