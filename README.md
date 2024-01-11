@@ -23,7 +23,12 @@
 ###4.5 Saving Username
 - 유저 정보를 local Storage에 저장한다.
 - localStorage API 사용하기
-- selItem을 이용하면 local storage에 정보를 저장할 수 있음.
+- setItem : local storage에 정보를 저장할 수 있음.
 - getItem : 정보 불러오기
 - removeItem : 정보 삭제하기
 - 문제 : 로컬스토리지에 username이 저장되어 있지만, 아직도 새로고침하면 form이 표시 됨. 
+
+###4.6 Loading Username
+- 초기 세팅으로 form과 h1 모두 안보이게 처리
+- 유저 정보를 확인했을 때 local storage에 유저정보가 있으면 form을 보이지 않고 h1이 보이도록 한다.
+- if문을 사용하여 저장된 값이 있는지 확인
