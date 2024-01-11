@@ -19,3 +19,11 @@
 - classList.add, .remove를 이용하여 html요소 사라지고, 보이게 하기
 - ``(백틱), ${} : 변수를 문자열 안에 포함시키는 방법 
 - 문제 : 유저를 기억하지 못함. 새로고침할 때마다 새로 로그인 해줘야 한다. 새로고침해도 form 볼 필요없이 이름이 저장되어 있으면 좋겠어.
+
+###4.5 Saving Username
+- 유저 정보를 local Storage에 저장한다.
+- localStorage API 사용하기
+- selItem을 이용하면 local storage에 정보를 저장할 수 있음.
+- getItem : 정보 불러오기
+- removeItem : 정보 삭제하기
+- 문제 : 로컬스토리지에 username이 저장되어 있지만, 아직도 새로고침하면 form이 표시 됨. 
