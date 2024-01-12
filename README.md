@@ -53,4 +53,5 @@
 - 현재 문자열의 시작을 다른 문자열로 채워, 주어진 길이를 만족하는 새로운 문자열을 반환. 채워넣기는 대상 문자열의 시작(좌측)부터 적용
 - 문법 : str.padStart(targetLength [, padString])
 - padEnd()도 있음 : 현재 문자열에 다른 문자열을 채워, 주어진 길이를 만족하는 새로운 문자열을 반환. 채워넣기는 대상 문자열의 끝(우측)부터 적용
-- 시계에 padStart()를 사용 > 그러나 error : number에는 쓸 수 없음 > number를 str로 변환 - String()으로 변환대상을 감싸줌
+- 문제 : 시계에 padStart()를 사용 > 그러나 error : number에는 쓸 수 없음
+- 해결 : String() - number를 str로 변환하기 위해 String()으로 변환대상을 감싸줌
