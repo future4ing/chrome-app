@@ -44,5 +44,6 @@
 
 ###5.1 Timeouts and Dates
 - setTimeout() : 일정 시간이 지난 후에 함수를 실행하는 방법
-- Date()
+- 시계 만들기 : Date()의 메서드 사용
 - getDate(), getDay(), getFullYear(), getHours(), getMinutes(), getSeconds()
+- 문제 : 예를 들어 12시 4분 1초 일 때(10의자리 이하의 숫자), 숫자가 4, 1과 같이 한자리(12:4:1)로 보임. 두자리로 보이고 싶음(ex. 12:04:01)
