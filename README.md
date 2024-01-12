@@ -2,6 +2,8 @@
 
 바닐라 자바스크립트로 크롬앱 만들기(feat. nomadcoders)
 
+##4 LOGIN
+
 ###4.1 Form Submission
 - input의 유효성 검사를 작동시키기 위해서는 form 안에 input이 들어가야 함.
 - 입력을 하고 버튼(또는 엔터)을 누르면, 새로고침 됨.(웹사이트 재시작 > form이 submit되고 있어서)
@@ -32,3 +34,10 @@
 - 초기 세팅으로 form과 h1 모두 안보이게 처리
 - 유저 정보를 확인했을 때 local storage에 유저정보가 있으면 form을 보이지 않고 h1이 보이도록 한다.
 - if문을 사용하여 저장된 값이 있는지 확인
+
+
+##5 CLOCK
+
+###5.0 Intervals
+- clock을 시작하면서 login은 greetings이라는 파일로 변경, 파일을 분리
+- setInterval : 일정 시간이 지난 후 원하는 함수를 반복적으로 실행(호출)
