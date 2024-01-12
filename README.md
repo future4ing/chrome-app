@@ -40,4 +40,9 @@
 
 ###5.0 Intervals
 - clock을 시작하면서 login은 greetings이라는 파일로 변경, 파일을 분리
-- setInterval : 일정 시간이 지난 후 원하는 함수를 반복적으로 실행(호출)
+- setInterval() : 일정 시간 간격으로 원하는 함수를 반복적으로 실행(호출)
+
+###5.1 Timeouts and Dates
+- setTimeout() : 일정 시간이 지난 후에 함수를 실행하는 방법
+- Date()
+- getDate(), getDay(), getFullYear(), getHours(), getMinutes(), getSeconds()
