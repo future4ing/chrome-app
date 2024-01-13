@@ -71,3 +71,10 @@
     3. Math.floor() 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환
 - 문제 : array를 불러올 때 10이라는 숫자로 하드코딩을 했다는 것 -> 명언을 10개 가지고 있을 때만 동작
 - 해결 : array가 얼마나 긴지 알아내는 것이 필요 => [1,2,3,4,5].length
+
+### 6.1 Background
+- 배경을 랜덤으로 나오게 하는 기능 추가
+- 목표 : 랜덤한 숫자를 얻어서 그걸로 이미지를 고르고 그 이미지를 body에 추가하기
+- 랜덤 숫자 얻어서 이미지 고르기 : quote와 거의 같음
+- html element 만들기 : document.createElement()
+- bgImage를 html의 body 내부에 추가하기 : document.body.appendChild()
