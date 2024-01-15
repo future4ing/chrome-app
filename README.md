@@ -63,7 +63,7 @@
 - 화면에 명언을 랜덤으로 나오게 하는 기능 추가하기 
 - 명언 10개가 든 Array를 준비
 - 각 명언은 object 형식 - 명언, 작가
-- randomness
+- randomness 무작위성
     - Math.random()*10 <= 랜덤은 0.xxxx값만 주기 때문에
 - 정수로 만들기 : 
     1. Math.round() 입력값을 반올림한 수와 가장 가까운 정수 값을 반환
@@ -78,3 +78,9 @@
 - 랜덤 숫자 얻어서 이미지 고르기 : quote와 거의 같음
 - html element 만들기 : document.createElement()
 - bgImage를 html의 body 내부에 추가하기 : document.body.appendChild()
+
+
+## 7 TO DO LIST
+
+### 7.0 setup
+- form과 input을 만들고, submit했을 때 기본행동을 초기화
