@@ -84,3 +84,9 @@
 
 ### 7.0 setup
 - form과 input을 만들고, submit했을 때 기본행동을 초기화
+
+### 7.1 Adding To Dos
+- paintToDo(newTodo) 함수 추가
+- appendChild() : 한 노드를 특정 부모 노드의 자식 노드 리스트 중 마지막 자식으로 붙임
+- greeting과 마찬가지로 submit event를 받고, 기본동작을 막고, input에서 value를 얻어냄
+- 문제 : 1. list item을 지울 수 없다는 것 2. 새로고침하면 list가 사라짐
