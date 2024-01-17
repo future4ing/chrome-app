@@ -107,3 +107,12 @@
     - 문제 : 로컬스토리지에 배열 저장 불가(온리 텍스트만 가능)
     - 문제2 : 새로고침하면 로컬에 남아있다가 새로운 텍스트를 입력하면 이전기록이 사라지고 새로운 텍스트가 저장됨 또는 X버튼으로 li 삭제를 해도 로컬스토리지에는 그대로 남아있음
     - 해결 : JSON.stringify() 사용하면 텍스트를 배열로 저장 가능
+- 문제 : 새로고침하면 toDOs가 localStorage에는 남아있지만 화면에는 나타나지 않음
+
+### 7.4 Loading To Dos part One
+- 로컬스토리지에 저장된 todo가 있으면 각 todo를 console에 출력되도록 함
+- JSON.stringify([1,2,3,4]) :array을 string으로 변환
+- => '[1,2,3,4]'
+- JSON.parse('[1,2,3,4]') : string을 array로 변환
+- => (4) [1, 2, 3, 4]
+- forEach : array의 각 item에 대해 function을 실행하게 해줌
