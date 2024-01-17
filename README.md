@@ -88,5 +88,13 @@
 ### 7.1 Adding To Dos
 - paintToDo(newTodo) 함수 추가
 - appendChild() : 한 노드를 특정 부모 노드의 자식 노드 리스트 중 마지막 자식으로 붙임
-- greeting과 마찬가지로 submit event를 받고, 기본동작을 막고, input에서 value를 얻어냄
+- greeting과 마찬가지로 submit event를 받고, 기본동작을 막고, input에서 value를 얻어냄, (new기능)paintToDo함수 호출
 - 문제 : 1. list item을 지울 수 없다는 것 2. 새로고침하면 list가 사라짐
+
+### 7.2 Deleting To Dos
+- 투두 삭제하는 기능
+- 버튼을 만들어서 버튼을 누르면 투두가 삭제되도록 하려고 함
+- button을 클릭하면 > deleteToDo() 실행
+- 문제 : 여러 개의 버튼이 있을 때, 버튼이 클릭되고 있는데 어떤 버튼이 클릭됐는지 알 수 없음
+- button을 클릭할 때 deleteToDo 함수에 event를 얻음. 이벤트는 타겟을 가짐
+- 타겟 = 버튼, 그 부모요소는 li라는 것을 알아낸 후, 삭제시킴
