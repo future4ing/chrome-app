@@ -140,3 +140,7 @@
     function sexyFilter(todo) {return todo.id !== 1705538268454}
     todos.filter(sexyFilter)
     결과 > (2) [{…}, {…}]0: {text: 'c', id: 1705538269177}1: {text: 'v', id: 1705538269716}length: 2[[Prototype]]: Array(0)
+
+### 7.8 Deleting To Dos part Three
+- 배열 item을 삭제하고 로컬 스토리지를 업데이트
+- parseInt() : 문자열을 숫자로 변환
