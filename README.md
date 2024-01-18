@@ -135,7 +135,7 @@
 - 새로운개념 : filter
 - Array.prototype.filter() : Array 인스턴스의 filter() 메서드는 주어진 배열의 일부에 대한 얕은 복사본을 생성하고, 주어진 배열에서 제공된 함수에 의해 구현된 테스트를 통과한 요소로만 필터링
 - 필터를 사용하여 지우고 싶은 item을 제외하고 새로운 array를 생성함
-```
+```ruby
 const todos = [{"text":"a","id":1705538268454},{"text":"c","id":1705538269177},{"text":"v","id":1705538269716}]
 function sexyFilter(todo) {return todo.id !== 1705538268454}
 todos.filter(sexyFilter)
