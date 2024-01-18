@@ -129,3 +129,14 @@
 - 그러기 위해 데이터베이스에 id를 저장하는 옵션을 줌(array item을 단순text가 아닌 object({id:random, text:"a"})로 만들고 싶음<-유일성을 부여)
 - 랜덤 id 만드는 법 : Date.now()
 - 문제 : array에서 item을 지우는 법
+
+### 7.7 Deleting To Dos part Two
+- array에서 item 삭제하기
+- 새로운개념 : filter
+- Array.prototype.filter() : Array 인스턴스의 filter() 메서드는 주어진 배열의 일부에 대한 얕은 복사본을 생성하고, 주어진 배열에서 제공된 함수에 의해 구현된 테스트를 통과한 요소로만 필터링
+- 필터를 사용하여 지우고 싶은 item을 제외하고 새로운 array를 생성함
+
+    const todos = [{"text":"a","id":1705538268454},{"text":"c","id":1705538269177},{"text":"v","id":1705538269716}]
+    function sexyFilter(todo) {return todo.id !== 1705538268454}
+    todos.filter(sexyFilter)
+    결과 > (2) [{…}, {…}]0: {text: 'c', id: 1705538269177}1: {text: 'v', id: 1705538269716}length: 2[[Prototype]]: Array(0)

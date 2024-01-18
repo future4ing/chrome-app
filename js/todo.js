@@ -49,5 +49,6 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 if(savedToDos !== null) {
     const parsedToDos = JSON.parse(savedToDos);
     toDos = parsedToDos; // 배열, 이전 todo 가져와서 복원
-    parsedToDos.forEach(paintToDo);
+    parsedToDos.forEach(paintToDo); // paintToDo를 parsedToDos의 배열의 요소마다 실행
 }
+
