@@ -11,13 +11,15 @@ function saveToDos() { // toDos의 내용을 로컬스토리지에 저장
 
 function deleteToDo(event) {
     const li = event.target.parentElement;
+    console.log(li.id);
     li.remove();
 }
 
 function paintToDo(newTodo) {
     const li = document.createElement("li");
+    li.id = newTodo.id;
     const span = document.createElement("span");
-    span.innerText = newTodo;
+    span.innerText = newTodo.text;
     const button = document.createElement("button");
     button.innerText = "X";
     button.addEventListener("click", deleteToDo);
@@ -30,9 +32,14 @@ function handleToDoSubmit(event) {
     event.preventDefault();
     const newTodo = toDoInput.value;
     toDoInput.value = "";
-    toDos.push(newTodo); // 배열 toDos(빈 배열)에 newTodo를 넣음
-    paintToDo(newTodo); // 화면에 newTodo를 그려줌
-    saveToDos(newTodo);
+    const newTodoObj = {
+        text : newTodo,
+        id : Date.now(), 
+    }
+    // toDos.push(newTodo); // 배열 toDos(빈 배열)에 newTodo를 넣음, DB에 사용자각 입력한 text를 push
+    toDos.push(newTodoObj);
+    paintToDo(newTodoObj); // 화면에 newTodo를 그려줌
+    saveToDos();
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
