@@ -38,7 +38,7 @@
 
 ## 5 CLOCK
 
-###5.0 Intervals
+### 5.0 Intervals
 - clock을 시작하면서 login은 greetings이라는 파일로 변경, 파일을 분리
 - setInterval() : 일정 시간 간격으로 원하는 함수를 반복적으로 실행(호출)
 
@@ -135,11 +135,12 @@
 - 새로운개념 : filter
 - Array.prototype.filter() : Array 인스턴스의 filter() 메서드는 주어진 배열의 일부에 대한 얕은 복사본을 생성하고, 주어진 배열에서 제공된 함수에 의해 구현된 테스트를 통과한 요소로만 필터링
 - 필터를 사용하여 지우고 싶은 item을 제외하고 새로운 array를 생성함
-
-    const todos = [{"text":"a","id":1705538268454},{"text":"c","id":1705538269177},{"text":"v","id":1705538269716}]
-    function sexyFilter(todo) {return todo.id !== 1705538268454}
-    todos.filter(sexyFilter)
-    결과 > (2) [{…}, {…}]0: {text: 'c', id: 1705538269177}1: {text: 'v', id: 1705538269716}length: 2[[Prototype]]: Array(0)
+```
+const todos = [{"text":"a","id":1705538268454},{"text":"c","id":1705538269177},{"text":"v","id":1705538269716}]
+function sexyFilter(todo) {return todo.id !== 1705538268454}
+todos.filter(sexyFilter)
+결과 > (2) [{…}, {…}]0: {text: 'c', id: 1705538269177}1: {text: 'v', id: 1705538269716}length: 2[[Prototype]]: Array(0)
+```
 
 ### 7.8 Deleting To Dos part Three
 - 배열 item을 삭제하고 로컬 스토리지를 업데이트
