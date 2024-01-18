@@ -116,3 +116,9 @@
 - JSON.parse('[1,2,3,4]') : string을 array로 변환
 - => (4) [1, 2, 3, 4]
 - forEach : array의 각 item에 대해 function을 실행하게 해줌
+
+### 7.5 Loading To Dos part Two
+- parseToDos array의 각 item를 paint하기(브라우저 스크린에 나타내기)
+- 문제 : 새로고침 후 투두를 추가하면 로컬스토리지가 빈배열에서 시작 <- 앱 시작할 때 array가 항상 비어있기 때문
+- 해결 : toDos = parsedToDos :  이전 todo 가져와서 복원
+- 문제2 : 화면에서 삭제를 해도 로컬스토리지에선 삭제가 안됨
