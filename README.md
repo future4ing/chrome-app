@@ -145,3 +145,10 @@ todos.filter(sexyFilter)
 ### 7.8 Deleting To Dos part Three
 - 배열 item을 삭제하고 로컬 스토리지를 업데이트
 - parseInt() : 문자열을 숫자로 변환
+
+## 8 WEATHER
+
+### 8.0 Geolocation
+- getCurrentPosition() : argument가 2개(success, error). 인터페이스 의 메서드는 장치 Geolocation의 현재 위치를 가져오는 데 사용
+- 유저의 위치 정보 가져오기
+- 날씨 정보 API : https://openweathermap.org/api 
